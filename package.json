@@ -1,0 +1,23 @@
+{
+  "name": "cron-status-server",
+  "version": "1.0.0",
+  "description": "Tiny Express server that runs a cron job and exposes start/stop/status HTTP endpoints",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "express": "^5.3.0",
+    "node-cron": "^4.6.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.6.5",
+    "@types/node-cron": "^3.0.11",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}
